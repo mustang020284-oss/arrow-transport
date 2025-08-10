@@ -1,6 +1,6 @@
 export default function Services() {
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section id="uslugi" className="scroll-mt-24 ...">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-8 text-center">Nasze Usługi</h2>
         <div className="grid gap-8 md:grid-cols-3">

@@ -8,7 +8,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="cennik" className="max-w-5xl mx-auto px-4 py-16 text-white">
+    <section id="cennik" className="scroll-mt-24 max-w-5xl mx-auto px-4 py-16 text-white">
       <header className="mb-8 text-center">
         <h2 className="text-3xl font-semibold">Cennik</h2>
         <p className="mt-2 text-sm text-gray-300">
