@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header() {
@@ -9,7 +9,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-white/10 bg-[#0b0d10]/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
         <div className="flex items-center gap-3">
-          <div className="h-9 w-9 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 shadow-lg shadow-cyan-500/20" />
+          <div className="h-9 w-9 rounded-full overflow-hidden">
+            <Image
+              src="/logo.png"
+              alt="Logo Arrow Transport"
+              width={100}
+              height={100}
+            />
+          </div>
           <span className="text-lg font-semibold tracking-wide text-white">
             Arrow Transport
           </span>

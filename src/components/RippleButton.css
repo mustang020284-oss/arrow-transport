@@ -1,0 +1,30 @@
+.ripple-button {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  padding: 20px 30px;
+  border-radius: 25px;
+  background: radial-gradient(circle at top left, #a99e8e, #645f56);
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s;
+}
+
+.ripple-button:hover {
+  transform: scale(1.05);
+}
+
+.ripple-button:active {
+  transform: scale(0.95);
+}
+
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.425);
+  animation: ripple 600ms linear;
+  transform: scale(0);
+  pointer-events: none;
+}
